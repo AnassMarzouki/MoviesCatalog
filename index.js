@@ -32,7 +32,7 @@ async function appendToArray () {
     const keyWord = inputField.value
     console.log('your keyword: ' + keyWord)
 
-    const res = await fetch(`http://www.omdbapi.com/?s=${keyWord}&apikey=f4583eb2`)
+    const res = await fetch(`https://www.omdbapi.com/?s=${keyWord}&apikey=f4583eb2`)
     const element = await res.json()
 
     const plotPromies = []
