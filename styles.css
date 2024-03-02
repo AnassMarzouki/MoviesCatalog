@@ -1,0 +1,158 @@
+body {
+    margin:0;
+    color:rgb(255, 255, 255);
+    font-family: 'Roboto';
+    background: #141E30;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+.page-title {
+    color:rgb(212, 0, 0);
+}
+.top-head {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px;
+    margin-bottom: 1em;
+    background-image: url('banner.jpg');
+    background-size: cover;
+}
+
+.search-bar {
+    padding-left: 2.3em;
+    height: 2em;
+}
+
+#input-field {
+    width:70vw;
+    height: 4vh;
+    border-radius: 5px;
+}
+
+#search-btn {
+    height: 5vh;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+#find-movie{
+    color:white;
+    text-decoration-line: none;
+    font-size: large;
+    font-weight: bold;
+    font-style: none;
+}
+
+#find-movie:hover{
+    color:white;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    border:1px solid white;
+    text-decoration-line: none;
+    font-size: large;
+    font-weight: bold;
+    font-style: none;
+}
+
+}
+#container {
+    margin-left: 2%;
+    margin-right: 2%;
+    color:black;
+    display: flex;
+    flex-direction: row;
+    border-radius: 1em;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 1em;
+}
+
+#metadata {
+    display: flex;
+    flex-direction: column;
+    width:60%;
+    margin:0;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+#title-rating{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    
+
+}
+
+#time-genre-addwatchlist {
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#movie-list, #saved-movies-list {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.wl-btn-delete, .wl-btn-add {
+    width:2.5em;
+    height:2.5em;
+    border-radius: 50%;
+    border:none;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+.wl-btn-add:focus {
+    background-color: rgb(139, 231, 0);
+}
+.wl-btn-add:hover {
+    border: 1px solid rgb(88, 0, 170);
+}
+
+.wl-btn-delete:hover {
+    border:1px solid red;
+}
+.wl-btn-delete:focus {
+    background-color: red;
+}
+
+#movie-description {
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align:left
+}
+
+.poster{
+    width:10em;
+}
+
+#poster {
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+p{
+    font-size: 0.8rem;
+}
+
+#title-rating {
+    margin-left: 0;
+    justify-content: space-between;
+}
+
+.movie-title-tag {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.release-year {
+    font-weight: bold;
+    font-size: 0.8rem;;
+}
