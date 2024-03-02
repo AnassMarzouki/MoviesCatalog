@@ -73,13 +73,13 @@ async function appendToArray () {
         newString += `
         <div id="container">
         <div id="poster">
-            <img src=${mPoster[i]}>
+            <img src=${mPoster[i]} class="poster">
         </div>
 
         <div id="metadata">
             <div id="title-rating">
-                <p data-mvtitle="${mID[i]}">${mTitles[i]}</p>
-                <p>${mYears[i]}</p>
+                <p data-mvtitle="${mID[i]}" class="movie-title-tag">${mTitles[i]}</p>
+                <p class="release-year">${mYears[i]}</p>
             </div>
 
             <div id="time-genre-addwatchlist">

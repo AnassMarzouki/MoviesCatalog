@@ -22,6 +22,7 @@ background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, F
 .search-bar {
     padding-left: 2.3em;
     height: 2em;
+    margin-bottom: 2em;
 }
 
 #input-field {
