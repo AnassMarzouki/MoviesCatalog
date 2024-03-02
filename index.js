@@ -2,16 +2,12 @@ const searchBtn = document.getElementById('search-btn')
 const inputField = document.getElementById('input-field')
 const movieList = document.getElementById('movie-list')
 
-
 const savedMovies = document.getElementById('saved-movies')
 
 searchBtn.addEventListener('click', function (){
     appendToArray()})
 
-
-
 document.addEventListener('click', addtoWatchList)
-
 
 function addtoWatchList(event){
    
@@ -20,9 +16,7 @@ function addtoWatchList(event){
         let existingData = localStorage.getItem('movies') || '[]';
         existingData = JSON.parse(existingData)
         existingData.push(event.target.dataset.add)
-
         localStorage.setItem('movies', JSON.stringify(existingData))
-
             }         
         }
 
@@ -50,13 +44,9 @@ async function appendToArray () {
         mType.push(element.Search[i].Type)
         mPoster.push(element.Search[i].Poster)
 
-        // console.log(element.Search[i].Title)
-        
-
         const plotPromise = fetch(`http://www.omdbapi.com/?apikey=f4583eb2&i=${mID[i]}&plot=short`)
         .then (res => res.json())
         .then (data => {
-            //console.log (mID[i] + ': ' + data.Plot)
             return data.Plot
         })
 

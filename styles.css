@@ -37,6 +37,12 @@ background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, F
     border-radius: 5px;
 }
 
+#search-btn:hover {
+    height: 5vh;
+    background-color: cyan;
+    border-radius: 5px;
+}
+
 #find-movie{
     color:white;
     text-decoration-line: none;

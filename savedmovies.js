@@ -74,8 +74,6 @@ function loopThroughIDs (){
     } else {
         savedMovies.innerHTML = '<h4> Such empty </h4>'
     }
-    
-
 }
 
 loopThroughIDs()
