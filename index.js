@@ -4,7 +4,9 @@ const movieList = document.getElementById('movie-list')
 
 const savedMovies = document.getElementById('saved-movies')
 
-searchBtn.addEventListener('click', function (){
+searchBtn.addEventListener('click', function (e){
+    e.preventDefault()
+
     appendToArray()})
 
 document.addEventListener('click', addtoWatchList)
@@ -61,28 +63,27 @@ async function appendToArray () {
     for (let i=0; i<mTitles.length;i++){
         
         newString += `
-        <div id="container">
-        <div id="poster">
-            <img src=${mPoster[i]} class="poster">
-        </div>
+            <div id="container">
+                <div id="poster">
+                    <img src=${mPoster[i]} class="poster">
+                </div>
 
-        <div id="metadata">
-            <div id="title-rating">
-                <p data-mvtitle="${mID[i]}" class="movie-title-tag">${mTitles[i]}</p>
-                <p class="release-year">${mYears[i]}</p>
-            </div>
+                <div id="metadata">
+                    <div id="title-rating">
+                        <p data-mvtitle="${mID[i]}" class="movie-title-tag">${mTitles[i]}</p>
+                        <p class="release-year">${mYears[i]}</p>
+                    </div>
 
-            <div id="time-genre-addwatchlist">
-                
-                <p>🎬 ${mType[i]}</p>
-                <button data-add="${mID[i]}" class="wl-btn-add">+</button>
+                    <div id="time-genre-addwatchlist">  
+                        <p>🎬 ${mType[i]}</p>
+                        <button data-add="${mID[i]}" class="wl-btn-add">➕</button>
+                    </div>
+                    
+                    <div id="movie-description">
+                        <p>${mPlots[i]}</p>
+                    </div>
+                </div>
             </div>
-                
-            <div id="movie-description">
-                <p>${mPlots[i]}</p>
-            </div>
-        </div>
-    </div>
     `
     }
     movieList.innerHTML = newString

@@ -7,7 +7,16 @@ background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-2
 background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 .page-title {
-    color:rgb(212, 0, 0);
+    color:rgb(3, 212, 3);
+    text-shadow: 1px 1px 6px rgba(255, 245, 245, 1);
+
+}
+
+#saved-movies {
+    font-size: x-large;
+    text-align: center;
+    font-style: italic;
+
 }
 .top-head {
     display:flex;
@@ -26,7 +35,7 @@ background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, F
 }
 
 #input-field {
-    width:70vw;
+    width:70%;
     height: 4vh;
     border-radius: 5px;
 }
@@ -93,6 +102,10 @@ background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, F
 }
 
 #time-genre-addwatchlist {
+    background-color: rgb(236, 236, 236);
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 0.4em;
     font-size: 1rem;
     display: flex;
     justify-content: space-between;
@@ -105,7 +118,8 @@ background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, F
 
 }
 
-.wl-btn-delete, .wl-btn-add {
+.wl-btn-delete {
+    background-color: rgb(182, 3, 3);
     width:2.5em;
     height:2.5em;
     border-radius: 50%;
@@ -115,6 +129,18 @@ background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, F
 
 }
 
+.wl-btn-add {
+    background-color: rgb(3, 182, 33);
+    width:2.5em;
+    height:2.5em;
+    border-radius: 50%;
+    border:none;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+
 .wl-btn-add:focus {
     background-color: rgb(139, 231, 0);
 }
@@ -123,7 +149,7 @@ background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, F
 }
 
 .wl-btn-delete:hover {
-    border:1px solid red;
+    border:2px solid black;
 }
 .wl-btn-delete:focus {
     background-color: red;
@@ -162,4 +188,55 @@ p{
 .release-year {
     font-weight: bold;
     font-size: 0.8rem;;
+}
+
+#such-empty {
+    text-align: center;
+    font-size: x-large;
+}
+
+h5{
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+
+
+    .page-title {
+        color:rgb(3, 212, 3);
+        text-shadow: 1px 1px 6px rgba(255, 245, 245, 1);
+    
+    }
+
+    #saved-movies-list, #movie-list {
+        display: grid;
+        flex-direction: row;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 7px;
+        
+    }
+
+    #such-empty {
+        text-align: center;
+        font-size: x-large;
+    }
+
+    .search-bar {
+
+        margin-left: auto;
+        margin-right: auto;
+        width:50%;
+        height: 4vh;
+        border-radius: 5px;
+    }
+
+    #input-field {
+        border:3px solid rgb(30, 223, 13);
+        background-color: rgb(245, 238, 226);
+    }
+
+    h5{
+        text-align: center;
+    }
 }

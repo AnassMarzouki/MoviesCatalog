@@ -42,6 +42,7 @@ function loopThroughIDs (){
                 mPlots = element.Plot
 
                 savedMovies.innerHTML += `
+                <div id="all-results">
                     <div id="container">
                     <div id="poster">
                         <img src=${mPoster} class="poster">
@@ -59,7 +60,7 @@ function loopThroughIDs (){
                             
                             <p>🎬 ${mType}</p>
                             <p>⭐${mRating}</p>
-                            <button data-remove="${mID}" class="wl-btn-delete">-</button>
+                            <button data-remove="${mID}" class="wl-btn-delete">🗑️</button>
                         </div>
                             <p>${mPlots}</p>
 
@@ -67,12 +68,13 @@ function loopThroughIDs (){
                         </div>
                     </div>
                     </div>
+                </div>
                     `
             
             })
         }
     } else {
-        savedMovies.innerHTML = '<h4> Such empty </h4>'
+        savedMovies.innerHTML = '<h4 id="such-empty"> Such empty :/</h4>'
     }
 }
 
