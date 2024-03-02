@@ -30,7 +30,7 @@ function loopThroughIDs (){
         for (let i=0; i<storedItems.length; i++){
             let movieID = storedItems[i]
 
-            fetch(`http://www.omdbapi.com/?apikey=f4583eb2&i=${movieID}&plot=short`)
+            fetch(`https://www.omdbapi.com/?apikey=f4583eb2&i=${movieID}&plot=short`)
             .then(res => res.json())
             .then (element => {
                 mTitles = element.Title

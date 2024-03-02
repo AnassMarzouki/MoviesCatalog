@@ -44,7 +44,7 @@ async function appendToArray () {
         mType.push(element.Search[i].Type)
         mPoster.push(element.Search[i].Poster)
 
-        const plotPromise = fetch(`http://www.omdbapi.com/?apikey=f4583eb2&i=${mID[i]}&plot=short`)
+        const plotPromise = fetch(`https://www.omdbapi.com/?apikey=f4583eb2&i=${mID[i]}&plot=short`)
         .then (res => res.json())
         .then (data => {
             return data.Plot
